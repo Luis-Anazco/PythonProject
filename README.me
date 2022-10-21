@@ -1,0 +1,33 @@
+What the program does
+
+The program allows users to see a list of meals from the menu with a key assigned to each meal.
+The user will then be prompted to enter a key, giving them the option to enter exit to terminate the program.
+If the user enters a valid key it will proceed to ask the user how many servings the user wants.
+Once this is done the recipe will appear in grams for the number of servings requested.
+The item will appear on the left and the quantity on the right, each item and quantity showing on a new line.
+If the user enters an incorrect key the user will be prompted to enter the number of servings but the program 
+will restart and the user will be informed an incorrect key was entered. In this case the user will be asked
+to enter a valid key again.
+After the recipe is shown to the user the program will restart, giving the user the option to choose a 
+different recipe, or simply choose the same recipe but get it for a different number of servings. 
+
+
+Meeting requirements
+
+The file containing all the code for this program is called recipe_book.py and does not depend on any other
+files. The program will run without errors even if the user enters an incorrect key, as it will just restart 
+the loop. The program will also continue running without errors as long as the user enters the number of 
+servings in number format. 
+Once the program launches the menu contains 4 different meals, and an option to exit the menu, which 
+terminates the program. 
+Once the user provides all the inputs asked, the program will re-run from the beginning asking the user for
+a new recipe, or to enter exit to terminate the program. 
+
+Future implementations
+
+This program could benefit from user input to add new recipes with ingredients and quantities specified by
+the user. This is probably achievable using Python but it would require more time and potentially more 
+complex functions. 
+A further feature could be to make a starter menu, main meal menu, and desserts menu, using the same 
+principles used in this program.
+
