@@ -1,1 +1,0 @@
-exec("int(input('Number of portions? '))")
