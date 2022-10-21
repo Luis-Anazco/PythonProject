@@ -1,10 +1,10 @@
+#Dictionaries 
+
 food = {'dessert': 'Desserts', 'meals': 'Main Meals'}
 
-
-dessert = {'tiramisu': 'tiramisu', 'pie': 'pie', 'pudding': 'pudding'}
+dessert = {'tiramisu': 'Tiramisu', 'pie': 'Pie', 'pudding': 'Pudding'}
 meals = {'chilli': 'Chilli con carne', 'bolognaise': 'Spaghetti Bolognaise', 'bangers': 'Bangers and mash', 
 'fish': 'Fish and chips'}
-
 
 chilli = {'Mince beef': 800, 'Red kidney beans': 200}
 bolognaise = {'Mince beef': 800, 'Tomato sauce': 800}
@@ -15,6 +15,8 @@ tiramisu = {'Cream': 400, 'Cocoa': 200}
 pie = {'Strawberries': 300, 'Cream': 200}
 pudding = {'Bread': 400, 'Milk': 200}
 
+
+#Output
 
 print('Hello, welcome to The LA Restaurant Recipes! You will now see a menu to choose recipes for either main meals or desserts.')
 
@@ -36,12 +38,16 @@ print('\nPlease enter the key to see the recipes for each food category. Alterna
 while j in food.keys():
     print('\nMeal Name = Key\n')
     exec("for j in food.keys(): print(f'{food[j]} = {j}')")
+    print('\n')
     exec("menu = input('Key: ')") 
+    print('\n')
     if menu == 'exit':
         break
     elif menu == 'dessert':
         exec("for d in dessert.keys(): print(f'{dessert[d]} = {d}')")
+        print('\n')
         exec("recipe = input('Key: ')") 
+        print('\n')
         if recipe == 'exit':
             break
         exec("servings = input('Please enter the number of servings you want the recipe to be for: ')") 
@@ -66,7 +72,9 @@ while j in food.keys():
             print('\nIncorrect key entered. Please try again.')
     elif menu == 'meals':
         exec("for i in meals.keys(): print(f'{meals[i]} = {i}')")
+        print('\n')
         exec("recipe = input('Key: ')") 
+        print('\n')
         if menu == 'exit':
             break
         exec("servings = input('Please enter the number of servings you want the recipe to be for: ')") 
