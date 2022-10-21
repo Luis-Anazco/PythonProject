@@ -93,3 +93,5 @@ while j in food.keys():
             continue
         else:
             print('\nIncorrect key entered. Please try again.')
+    else:
+        print('\nIncorrect key entered. Please try again.')
