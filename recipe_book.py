@@ -22,17 +22,14 @@ print('Hello, welcome to The LA Restaurant Recipes! You will now see a menu to c
 for i in meals.keys(): 
     exec("f'{meals[i]} = {i}'")
 
-
-
-print('\nPlease enter the key to see the recipes for each food category. Alternatively, enter exit to exit the menu.')
-
-
-
 for j in food.keys(): 
     exec("f'{food[j]} = {j}'")
 
 for d in dessert.keys():
     exec("f'{dessert[d]} = {d}'")
+
+
+print('\nPlease enter the key to see the recipes for each food category. Alternatively, enter exit to exit the menu.')
 
 
 
